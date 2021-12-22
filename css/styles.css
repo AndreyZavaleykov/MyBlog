@@ -47,7 +47,6 @@ body {margin:0;
     line-height: 150%;
     color: #fff;
     z-index: 3;
-
 }
 .header-arrow{
     width: 48px;
@@ -72,7 +71,6 @@ body {margin:0;
     left: 0;
 
 }
-
 .intro:after{
     content: "";
     width: 100%;
