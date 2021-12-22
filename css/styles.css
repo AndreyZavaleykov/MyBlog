@@ -113,7 +113,7 @@ nav {
     justify-content: center;
     /*Вырвнивание по поперечной горизонтальной оси*/
     align-items: center;
-    margin: auto;
+    margin: 30px auto auto auto;
     border-radius: 10px;
 }
 .menu ul {
