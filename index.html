@@ -4,6 +4,7 @@
 
 <head>
     <script src="js/snow.js"></script>
+    <script src="js/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,8 +13,8 @@
     <title>Андрей Завалейков</title>
 </head>
 
-<body onLoad = "initsnow()">
-
+<body >
+<!--onLoad = "initsnow()"-->
 <header>
     <div class="intro">
         <div class="video">
@@ -28,13 +29,38 @@
     <nav class="menu">
 
         <ul>
-            <li><a href="#"><i class="fa fa-home fa-fw"></i>Блог</a></li>
-            <li><a href="#">обо мне</a></li>
-            <li><a href="#">Работа</a></li>
-            <li><a href="#">Хобби</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li class="list active"><a href="">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="text">Главная</span>
+            </a></li>
+                        <li class="list" ><a href="#">
+                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                <span class="text">обо мне</span>
+            </a></li>
+                        <li class="list"><a href="#">
+                <span class="icon"><ion-icon name="hammer-outline"></ion-icon></span>
+                <span class="text">Работа</span>
+            </a></li>
+                        <li class="list"><a href="#">
+                <span class="icon"><ion-icon name="american-football-outline"></ion-icon></span>
+                <span class="text">Хобби</span>
+            </a></li>
+            <li class="list"><a href="#">
+                <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                <span class="text">Контакты</span>
+            </a></li>
+            <div class="indicator"></div>
         </ul>
     </nav>
+        <script>
+        const list = document.querySelectorAll(".list")
+        function activLink(){
+            list.forEach((item) =>
+                item.classList.remove("active"));
+            this.classList.add("active");
+        }
+        list.forEach((item)=>
+            item.addEventListener("mouseover",activLink));</script>
     </div>
 
 </header>
@@ -43,5 +69,7 @@
 </section>
 <footer>
 </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
