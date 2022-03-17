@@ -35,7 +35,7 @@ body {margin:0;
     margin: 0;
     margin-bottom: 25px;
     font-size: 56px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 130%;
     color: #fff;
     z-index: 3;
@@ -110,10 +110,9 @@ nav {
     display: block;
     display: flex;
     /*Вырвнивание по основной оси ( по вертикальной ости)*/
-    justify-content: center;
+    justify-content: flex-start;
     /*Вырвнивание по поперечной горизонтальной оси*/
     align-items: center;
-    margin: 30px auto auto auto;
     border-radius: 10px;
 }
 .menu ul {
@@ -216,6 +215,16 @@ nav {
 {
     transform:  translateX(calc(70px * 4));
 }
-/*.menu a:hover {background: #d6d6d6;}*/
-/*.menu li {*/
-/*}*/
+
+.projectDescription{
+    display: inline-flex;
+    margin-left: 500px;
+    margin-top: 40px;
+}
+.avatar img{
+    height: 400px;
+}
+.avatarText{
+    margin-top: 180px;
+}
+
